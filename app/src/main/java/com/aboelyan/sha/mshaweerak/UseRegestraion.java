@@ -72,7 +72,7 @@ public class UseRegestraion extends AppCompatActivity {
 
                                           Toast.makeText(UseRegestraion.this,TOKEN,Toast.LENGTH_LONG).show();
                                           confirmpassword = ConfirmPassword.getText().toString();
-                                          if ( Phones.equals("") || username.equals("") || password.equals("") || confirmpassword.equals("")) {
+                                          if ( Phones.equals("") || password.length() < 11  || username.equals("") || password.length() < 4  || password.equals("") || password.length() < 4  || confirmpassword.equals("")) {
                                               builder.setTitle("something went wrong .....");
                                               builder.setMessage("please fill all fields");
                                               diplayAlert("input_error");
